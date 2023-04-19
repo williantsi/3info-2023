@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title> Testando conexão ao banco de dados </title>
+</head>
+<body>
+  <h3>Formulário de Cadastro de Clientes</h3><br>
+  <form name="Cadastro" action="inserir_dados.php" method="POST">
+    <label>Nome do Cliente: </label>
+    <input type="text" name="nome" size="30" placeholder="Nome do cliente"/><br>
+    <label>Email: </label>
+    <input type="text" name="email" size="45" placeholder="email"><br>
+    <label>Sexo do Cliente: </label>
+    <select name="sexo" id="sexo">
+      <option value="M">Masculino</option>
+      <option value="F">Feminino</option>
+      <option value="N">Não Declarado</option>
+    </select><br>
+    <input type="submit" name="enviar" value="Enviar">
+  </form>
+</body>
+</html>

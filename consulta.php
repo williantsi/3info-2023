@@ -7,6 +7,7 @@
  <head>
  <link href="estilos.css" rel="stylesheet" type="text/css">
  <title>Resultado da pesquisa</title>
+ <link rel="stylesheet" href="estilo.css">
  </head>
  <body>
  

@@ -1,0 +1,121 @@
+/* Estilo da tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo das células do cabeçalho */
+  th {
+    background-color: #F7D357;
+    color: #333;
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  /* Estilo das células das linhas */
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  /* Estilo das linhas alternadas */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo do link para editar */
+  a.editar {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  /* Estilo do link para excluir */
+  a.excluir {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #F44336;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  /* Estilo do botão para adicionar produto */
+  button.adicionar {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Estilo da caixa de diálogo para adicionar ou editar produto */
+  div.caixa-dialogo {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Estilo da caixa de conteúdo da caixa de diálogo */
+  div.caixa-conteudo {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Estilo do botão para fechar a caixa de diálogo */
+  span.fechar {
+    display: inline-block;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  /* Estilo do formulário dentro da caixa de diálogo */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo dos campos do formulário */
+  form input[type="text"], form input[type="number"], form textarea {
+    margin: 8px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Estilo do botão de submit do formulário */
+  form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

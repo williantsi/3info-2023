@@ -15,15 +15,15 @@
  <tr>
  <th>ID</th>
  <th>NOME</th>
- <th>EMAIL</th>
- <th>SEXO</th>
+ <th>PREÇO</th>
+ <th>DESCRIÇÃO</th>
  <th>EDITAR</th>
  <th>EXCLUIR</th>
  </tr>
  
  <!-- Preenchendo a tabela com os dados do banco: -->
  <?php
- $sql = "SELECT * FROM cadastro";
+ $sql = "SELECT * FROM PRODUTOS";
  $resultado = mysqli_query($con,$sql) or die("Erro ao retornar dados");
  
  // Obtendo os dados por meio de um loop while
@@ -31,14 +31,14 @@
  {
    $id = $registro['id'];
    $nome = $registro['nome'];
-   $sobrenome = $registro['email'];
-   $sexo = $registro['sexo'];
+   $preco = $registro['preco'];
+   $descricao = $registro['descricao'];
    echo "<tr>";
    echo "<td>".$id."</td>"; 
    echo "<td>".$nome."</td>";
-   echo "<td>".$sobrenome."</td>";
-   echo "<td>".$sexo."</td>";
-   echo "<td><a href='editar.php?id=" . $id. "'>Editar</a></td>";
+   echo "<td>".$preco."</td>";
+   echo "<td>".$descricao."</td>";
+   echo "<td><a href='formulario_editar.php?id=" . $id. "'>Editar</a></td>";
    echo "<td><a href='excluir.php?id=" . $id. "'>Excluir</a></td>";
    echo "</tr>";
  }

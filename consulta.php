@@ -17,6 +17,8 @@
  <th>NOME</th>
  <th>EMAIL</th>
  <th>SEXO</th>
+ <th>EDITAR</th>
+ <th>EXCLUIR</th>
  </tr>
  
  <!-- Preenchendo a tabela com os dados do banco: -->
@@ -36,6 +38,8 @@
    echo "<td>".$nome."</td>";
    echo "<td>".$sobrenome."</td>";
    echo "<td>".$sexo."</td>";
+   echo "<td><a href='editar.php?id=" . $id. "'>Editar</a></td>";
+   echo "<td><a href='excluir.php?id=" . $id. "'>Excluir</a></td>";
    echo "</tr>";
  }
  mysqli_close($con);
